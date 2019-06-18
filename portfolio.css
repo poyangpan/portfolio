@@ -136,7 +136,6 @@ act_bg {
     background-color: rgb(164, 186, 203);
     height: 300px;
     border: 15px solid white;
-
 }
 
 /* 遮罩效果 */
@@ -165,15 +164,20 @@ act_bg {
     font-style: oblique;
 }
 
+/* CS */
+
+
 /* 自製grid */
 #fly_area,
 #travel_area,
 #dance_area,
 #sing_area {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
 }
+
+
 
 @media screen and (min-width: 1200px) {
     .col-x {
@@ -199,7 +203,7 @@ act_bg {
 
 @media screen and (min-width: 768px) and (max-width:991.99px) {
     .col-x {
-        width: 355px
+        width: 350px
     }
 
     .photo>p>img {
@@ -225,11 +229,75 @@ act_bg {
     }
 
     .photo>p>img {
+        width: 100%;
         height: 270px;
 
     }
+
+    #travel_photo>p>img,
+    #fly_photo>p>img {
+        width: 100%;
+        height: 270px;
+    }
+
+
 }
 
+/* 以768px為分割 處理order與cs */
+@media screen and (max-width:767.99px) {
+    #web_bg:before {
+        content: "Web development";
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Noto Serif SC', serif;
+        display: block;
+        width: 30%;
+        height: 15%;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    }
+
+    /* 排列rwd下活動順序 */
+    #dance_area>.act_1 {
+        order: 1;
+    }
+
+    #dance_area>.act_2 {
+        order: 2;
+    }
+
+    #fly_area>.act_1 {
+        order: 1;
+    }
+
+    #fly_area>.act_2 {
+        order: 2;
+    }
+
+    section>.container>.row.mt-3:nth-child(2n+2)>.col-x.act_1 {
+        order: 1;
+    }
+
+    section>.container>.row.mt-3:nth-child(2n+2)>.col-x.act_2 {
+        order: 2;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #web_bg:before {
+        content: "Web development";
+        color: white;
+        font-size: 2.8em;
+        font-family: 'Noto Serif SC', serif;
+        display: block;
+        width: 30%;
+        height: 15%;
+        position: absolute;
+        top: 30px;
+        left: 50px;
+    }
+}
 
 /* 活動照片 */
 .photo>p {
@@ -253,7 +321,7 @@ act_bg {
 }
 
 .web_bg {
-    background-color: rgb(223, 223, 191)
+    background-color: rgb(150, 184, 184)
 }
 
 .app_bg {
@@ -270,7 +338,7 @@ act_bg {
     align-items: flex-end;
 }
 
-/* foorer */
+/* footer */
 footer {
     background-color: #546b80;
     height: 200px;
