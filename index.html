@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://bootswatch.com/4/superhero/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+        integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./about.css">
+    <title>Poyangpan's portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbar">
+        <a class="navbar-brand eng_spe" href="#">Poyang's portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto eng_spe">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class=" sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#honor">Honor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form> -->
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4" id=''>
+                    <div class="mt-3 mb-3">
+                        <img src="./img/coverphoto.jpg" width="50%" alt="" id="cover_photo">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-8">
+                    <h1 class="mt-3 eng_spe">Hello! This is poyang's portfolio.</h1>
+                    <hr class="my-4">
+                    <p class="eng_spe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <p class="lead eng_spe">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 s-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 個人學經歷 -->
+    <main class='mt-0' id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="eng_spe" align='center'>About</h1>
+                </div>
+            </div>
+            <div class='row' id='edu_area'>
+                <div class="col-md-6 col-lg-6 bg_white">
+                    <div class="jumbotron mt-3" id='edu_area_1'>
+                        <img src="./img/edu.JPG" alt="" width='100%'>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 bg_white">
+                    <div class="jumbotron mt-3" id='edu_area_2'>
+                        <h1>學經歷</h1>
+                        <ul>
+                            <li>新北市立淡水國中 畢業</li>
+                            <li>台北市立建國中學 畢業</li>
+                            <li>國立台灣大學醫學系 畢業</li>
+                            <li>台北市社會局 遊民收容中心替代役</li>
+                            <li>國立台灣大學資訊工程學系-Information System Training Program 進修</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 展開詳細資料 -->
+            <div class="row">
+                <div class="col-12">
+                    <div align='center'>
+                        <i class="fas fa-chevron-down" id='about_btn_down'></i>
+                        <i class="fas fa-chevron-up hidden" id='about_btn_up'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- 隱藏的資訊列 -->
+            <div class='row hidden' id='edu_area_more'>
+                <div class="col-md-6 col-lg-6 bg_white">
+                    <div class="jumbotron mt-3" id='edu_area_2'>
+                        <h1>替代役</h1>
+                        <h3>2018-2019 @ 台北市遊民收容中心</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 bg_white">
+                    <div class="jumbotron mt-3" id='edu_area_1'>
+                        <img src="./img/sms.JPG" alt="" width='100%'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 分隔線 -->
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 s-line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 獲獎 -->
+    <section id="honor">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="eng_spe" align='center'>Honor</h1>
+                </div>
+            </div>
+            <div class='row' id='honor_area'>
+                <div class="col-md-6 col-lg-6 bg_white">
+                    <div class="jumbotron mt-3" id='honor_area_1'>
+                        <h1>獲獎</h1>
+                        <ul>
+                            <li>101學年度第一學期最佳英語報告獎</li>
+                            <li>102學年度第一學期書卷獎</li>
+                            <li>102學年度第二學期書卷獎</li>
+                            <li>104學年度第二學期書卷獎</li>
+                            <li>105學年度第一學期書卷獎</li>
+                            <li>106學年度第一學期書卷獎</li>
+                            <li>國立台灣大學醫學院醫學系畢業成績 第三名</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 bg_white">
+                    <div class="jumbotron mt-3" id='honor_area_2'>
+                        <img src="./img/honor.jpg" alt="" width='100%'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 分隔線 -->
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 s-line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 經歷 -->
+    <article>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" id='info_area_2'>
+                    <h1 class="eng_spe" align='center'>Experience</h1>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- 分隔線 -->
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 s-line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 課外活動 -->
+    <section id="test">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="eng_spe" align='center'>Extracurricular activities</h1>
+                </div>
+            </div>
+            <!-- 歌唱 -->
+            <div class="row" id='sing_area'>
+                <div class="col-x act_1">
+                    <div class="act_p">
+                        <h1 class="">歌唱</h1>
+                        <p class="">
+                            <ul>
+                                <li>2015- 台大醫學院杏林合唱團</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-x act_2">
+                    <div class="photo" id="sing_photo">
+                        <p class=""><img src="./img/sing.JPG" alt=""></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 舞蹈 -->
+            <div class="row mt-3" id='dance_area'>
+                <div class="col-x act_2">
+                    <div class="photo" id="dance_photo">
+                        <p class=""><img src="./img/dance.JPG"" alt=""></p>
+                    </div>
+                </div>
+                <div class=" col-x act_1">
+                            <div class="act_p">
+                                <h1 class="">舞蹈</h1>
+                                <p class="">
+                                    <ul>
+                                        <li>2011-2013 台大MV舞蹈社</li>
+                                        <li>2015-2018 台大有氧舞蹈社</li>
+                                    </ul>
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <!-- 旅遊 -->
+                <div class="row mt-3" id='travel_area'>
+                    <div class="col-x act_1">
+                        <div class="act_p">
+                            <h1 class="">旅遊＆外語</h1>
+                            <p class="">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class=" col-x act_2"></div>
+
+                </div>
+                <!-- fly -->
+                <div class="row mt-3 mb-3" id='fly_area'>
+                    <div class="col-x act_2"></div>
+                    <div class="col-x act_1">
+                        <div class="act_p">
+                            <h1 class="">飛行</h1>
+                            <p class="">A life of accumulation!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- 分隔線 -->
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 s-line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 測試 -->
+    <!-- <section id="test">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
+        </div>
+    </section> -->
+    <!-- 分隔線 -->
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 s-line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- 資訊 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id=''>
+                    <h1 class="eng_spe" align='center'>Interest & Computer Science</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 bg_white">
+                    <div class="jumbotron mt-3" id="cs_info">
+                        <p class="lead">Front-End development: HTML/CSS, Javascript</p>
+                        <p class="lead">Back-End development: PHP, SQL, NoSQL</p>
+                        <p class="lead">ios APP development: Xcode</p>
+                        <p class="lead">Python, Python&Data Science</p>
+                        <hr class="my-4">
+                        <p>前端網頁設計、互動式網頁設計、關聯式資料庫/非關聯式資料庫、ios手機應用程式、Python程式設計、Python與資料科學</p>
+                    </div>
+                </div>
+            </div>
+            <!-- website -->
+            <div class="row mt-3" id='web_area'>
+                <div class="col-md-12 bg_white">
+                    <div class="jumbotron mt-3  web_bg">
+                        <h1 class="display-3">Website</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p id='web_img'>
+                            <img src="./img/mac.png" width="35%" alt="">
+                            <img src="./img/imac.png" width="45%" alt="">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- app -->
+            <div class="row" id='app_area'>
+                <div class="col-md-12 bg_white">
+                    <div class="jumbotron mt-3  app_bg">
+                        <h1 class="display-3">App</h1>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class="lead"><img src="" width="100%" alt=""></p>
+                    </div>
+                </div>
+            </div>
+            <!-- data science -->
+            <div class="row" id='py_area'>
+                <div class="col-md-12 bg_white">
+                    <div class="jumbotron mt-3  py_bg">
+                        <h1 class="display-3">Data science</h1>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <p class="lead"><img src="" width="100%" alt=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 分隔線 -->
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 s-line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="./moreInfo.js"></script>
+<script src="./fade_in.js"></script>
+<!-- <script src="./navbar.js"></script> -->
+
+</html>

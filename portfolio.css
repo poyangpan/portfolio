@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+
+    /*font-family: 'Noto Serif SC',serif;*/
+}
+
+
+.eng_spe {
+    font-family: 'Noto Serif SC',
+        serif;
+}
+
+/* nav */
+.navbar {
+    background-color: rgb(37, 43, 48) !important;
+}
+
+/*#navbar {
+    position: fixed;
+    top: 0;
+}*/
+/* test */
+#test {
+    background-image: url(./img/world_map.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left,
+        bottom center;
+    background-repeat: no-repeat;
+}
+
+#main {}
+
+/* header */
+#cover_photo {
+    border-radius: 120px;
+    margin-left: 25%;
+}
+
+
+@media screen and (min-width:768px) {
+    #cover_photo {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+#info_area_1,
+#info_area_2 {
+    background-color: rgb(111, 128, 143);
+}
+
+/* 分隔線 */
+.s-line {
+    background-color: rgb(37, 43, 48);
+    height: 10px;
+}
+
+/* flex排版設定 */
+#honor_area,
+#edu_area,
+#edu_area_more {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(231, 235, 238);
+    margin-bottom: 10px;
+}
+
+/* col背景顏色設定 */
+.bg_white {
+    background-color: rgb(231, 235, 238);
+}
+
+/* bootswatch引用容器設定 */
+.jumbotron {
+    margin-bottom: 1em;
+}
+
+/* 個人經歷照片 */
+#edu_area_1 {
+    background-color: rgb(142, 115, 115);
+}
+
+/* 獲獎照片 */
+#honor_area_2 {
+    background-color: rgb(201, 169, 111);
+}
+
+/* 個人經歷、獲獎照片邊框 */
+#edu_area_1,
+#honor_area_2 {
+    padding: 30px 20px 30px 20px;
+    border: 1px dotted grey;
+}
+
+/* 個人經歷、獲獎資訊字體 */
+#edu_area_2>ul>li,
+#honor_area_1>ul>li {
+    font-size: 24px;
+}
+
+/* 個人經歷、獲獎資訊字體rwd */
+@media screen and (max-width:999.99px) {
+
+    #honor_area_1>ul>li,
+    #edu_area_2>ul>li {
+        font-size: 16px;
+    }
+
+    #honor_area_1>h1,
+    #edu_area_2>h1 {
+        font-size: 24px;
+    }
+}
+
+/* 活動資訊背景顏色 */
+act_bg {
+    background-color: rgb(96, 145, 145);
+}
+
+.act_1 {
+    background-color: rgb(164, 186, 203);
+    height: 300px;
+    border: 15px solid white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.act_2 {
+    background-color: rgb(164, 186, 203);
+    height: 300px;
+    border: 15px solid white;
+
+}
+
+/* 遮罩效果 */
+.act_1:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.act_1:hover:after {
+    opacity: 0.2;
+    background-color: black;
+}
+
+.act_p>h1 {
+    font-size: 50px !important;
+}
+
+.act_p>p {
+    font-size: 25px !important;
+    font-style: oblique;
+}
+
+/* 自製grid */
+#fly_area,
+#travel_area,
+#dance_area,
+#sing_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 1200px) {
+    .col-x {
+        width: 565px
+    }
+
+    .photo>p>img {
+        height: 270px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width:1199.99px) {
+    .col-x {
+        width: 475px
+    }
+
+    .photo>p>img {
+        height: 270px;
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991.99px) {
+    .col-x {
+        width: 355px
+    }
+
+    .photo>p>img {
+        height: 240px;
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:767.99px) {
+    .col-x {
+        width: 540px;
+    }
+
+    .photo>p>img {
+        height: 270px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 575.99px) {
+    .col-x {
+        width: 100%;
+    }
+
+    .photo>p>img {
+        height: 270px;
+
+    }
+}
+
+
+/* 活動照片 */
+.photo>p {
+    /* 將活動照片置中 */
+    text-align: center;
+}
+
+/* #sing_photo {
+    padding: 30px 20px 30px 20px;
+    background-color: rgb(201, 117, 111);
+}
+
+#dance_photo {
+    padding: 30px 20px 30px 20px;
+    background-color: rgb(91, 134, 191);
+} */
+
+/* 電腦 背景 */
+#cs_info {
+    background-color: rgb(96, 145, 145);
+}
+
+.web_bg {
+    background-color: rgb(223, 223, 191)
+}
+
+.app_bg {
+    background-color: rgb(189, 150, 187)
+}
+
+.py_bg {
+    background-color: rgb(89, 184, 184)
+}
+
+#web_img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* foorer */
+footer {
+    background-color: #546b80;
+    height: 200px;
+}

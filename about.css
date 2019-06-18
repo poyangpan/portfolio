@@ -1,0 +1,11 @@
+i {
+    font-size: 50px;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
