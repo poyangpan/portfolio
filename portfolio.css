@@ -10,6 +10,10 @@
         serif;
 }
 
+.btn.btn-info {
+    border-radius: 10px !;
+}
+
 /* nav */
 .navbar {
     background-color: rgb(37, 43, 48) !important;
@@ -164,8 +168,30 @@ act_bg {
     font-style: oblique;
 }
 
-/* CS */
+/* CS python背景圖片 */
+.py_bg {
+    background-image: url(./img/ml.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    opacity: ;
+    height: 300px;
+}
 
+/* CS python文字 */
+.py_bg>h1,
+.py_bg>p {
+    font-size: 2.8em;
+    font-family: 'Noto Serif SC', serif;
+    color: rgb(36, 34, 34);
+}
+
+.py_bg>h3 {
+    font-size: 1.8em;
+    font-family: 'Noto Serif SC',
+        serif;
+    color: rgb(52, 47, 47);
+}
 
 /* 自製grid */
 #fly_area,
@@ -176,8 +202,6 @@ act_bg {
     justify-content: space-around;
     align-items: flex-end;
 }
-
-
 
 @media screen and (min-width: 1200px) {
     .col-x {
@@ -239,8 +263,6 @@ act_bg {
         width: 100%;
         height: 270px;
     }
-
-
 }
 
 /* 以768px為分割 處理order與cs */
@@ -255,7 +277,7 @@ act_bg {
         height: 15%;
         position: absolute;
         top: 30px;
-        left: 50px;
+        left: 30px;
     }
 
     /* 排列rwd下活動順序 */
@@ -273,6 +295,11 @@ act_bg {
 
     #fly_area>.act_2 {
         order: 2;
+    }
+
+    .py_bg>h1,
+    .py_bg>p {
+        font-size: 1.8em;
     }
 
     /* section>.container>.row.mt-3:nth-child(2n+2)>.col-x.act_1 {
@@ -328,9 +355,9 @@ act_bg {
     background-color: rgb(189, 150, 187)
 }
 
-.py_bg {
+/* .py_bg {
     background-color: rgb(89, 184, 184)
-}
+} */
 
 #web_img {
     display: flex;
