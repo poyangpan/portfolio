@@ -13,38 +13,38 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
     <link rel="stylesheet" href="./portfolio.css">
     <link rel="stylesheet" href="./about.css">
-    <!-- <link rel="stylesheet" href="./carousel.css"> -->
+    <link rel="stylesheet" href="./carousel.css"">
     <title>Poyangpan's portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbar">
-        <a class="navbar-brand eng_spe" href="#">Poyang's portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
-            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbar">
+    <a class="navbar-brand eng_spe" href="#">Poyang's portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto eng_spe">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home<span class=" sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#main">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#honor">Honor</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">More</a>
-                </li>
-            </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto eng_spe">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home<span class=" sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#main">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#honor">Honor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">More</a>
+            </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
             </form> -->
-        </div>
+    </div>
     </nav>
 
     <header>
@@ -58,9 +58,9 @@
                 <div class="col-md-6 col-lg-8">
                     <h1 class="mt-3 eng_spe">Hello! This is poyang's portfolio.</h1>
                     <hr class="my-4">
-                    <p class="eng_spe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    <p class="title_font">哈囉！這是柏仰的自我介紹</p>
                     <p class="lead eng_spe">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                        <a class="btn btn-primary btn-lg" href="#main" role="button">Learn more</a>
                     </p>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6 bg_white">
                     <div class="jumbotron mt-3" id='edu_area_1'>
-                        <img src="./img/sms.JPG" alt="" width='100%'>
+                        <img src="./img/sms_2019.JPG" alt="" width='100%'>
                     </div>
                 </div>
             </div>
@@ -213,7 +213,11 @@
                 </div>
                 <div class="col-x act_2">
                     <div class="photo" id="sing_photo">
-                        <p class=""><img src="./img/sing_2019.JPG" alt=""></p>
+                        <p id="sing_slide">
+                            <img src="./img/sing_2019.JPG" alt="2019">
+                            <img src="./img/sing_2018.JPG" class="hidden" alt="2018">
+                            <img src="./img/sing_2016.JPG" class="hidden" alt="2016">
+                        </p>
                     </div>
                 </div>
             </div>
@@ -246,10 +250,10 @@
                     </div>
                     <div class=" col-x act_2">
                         <div class="photo" id="travel_photo">
-                            <p class="" id="travel_slide">
+                            <p id="travel_slide">
                                 <img src="./img/hallstat_scene.jpg" alt="">
-                                <img src="./img/pompei.jpg" alt="test">
-                                <img src="./img/london.jpg" alt="">
+                                <img src="./img/pompei.jpg" class="hidden" alt="pompei">
+                                <img src="./img/london.jpg" class="hidden" alt="london">
                             </p>
                         </div>
                     </div>
@@ -367,11 +371,11 @@
             </div>
         </div>
     </footer>
-</body>
+    </body>
 
-<script src="./moreInfo.js"></script>
-<script src="./fade_in.js"></script>
-<script src="./carousel.js"></script>
-<!-- <script src="./navbar.js"></script> -->
+    <script src="./moreInfo.js"></script>
+    <script src="./fade_in.js"></script>
+    <script src="./carousel.js"></script>
+    <!-- <script src="./navbar.js"></script> -->
 
 </html>

@@ -8,6 +8,10 @@
     display: none;
 }
 
+.title_font {
+    font-size: 2em;
+}
+
 .eng_spe {
     font-family: 'Noto Serif SC',
         serif;
