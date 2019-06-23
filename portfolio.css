@@ -4,9 +4,15 @@
     /*font-family: 'Noto Serif SC',serif;*/
 }
 
+/* 一般設定 */
 .hidden {
     display: none;
 }
+
+.center {
+    text-align: center;
+}
+
 
 .title_font {
     font-size: 2em;
@@ -17,8 +23,8 @@
         serif;
 }
 
-.btn.btn-info {
-    border-radius: 10px !;
+.btn {
+    border-radius: 3px !important;
 }
 
 /* nav */
@@ -340,16 +346,6 @@ act_bg {
     text-align: center;
 }
 
-/* #sing_photo {
-    padding: 30px 20px 30px 20px;
-    background-color: rgb(201, 117, 111);
-}
-
-#dance_photo {
-    padding: 30px 20px 30px 20px;
-    background-color: rgb(91, 134, 191);
-} */
-
 /* 電腦 背景 */
 #cs_info {
     background-color: rgb(96, 145, 145);
@@ -363,9 +359,6 @@ act_bg {
     background-color: rgb(189, 150, 187)
 }
 
-/* .py_bg {
-    background-color: rgb(89, 184, 184)
-} */
 
 #web_img {
     display: flex;
@@ -375,6 +368,11 @@ act_bg {
 
 /* footer */
 footer {
-    background-color: #546b80;
-    height: 200px;
+    background-color: #202428;
+}
+
+#message_area {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
