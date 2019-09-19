@@ -238,6 +238,8 @@ act_bg {
     .photo>p>img {
         height: 240px;
         width: 320px;
+        /*微調垂直置中*/
+        margin-top: 15px;
     }
 }
 
