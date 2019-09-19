@@ -13,54 +13,54 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
     <link rel="stylesheet" href="./portfolio.css">
     <link rel="stylesheet" href="./about.css">
-    <link rel="stylesheet" href="./carousel.css"">
+    <!-- <link rel="stylesheet" href="./carousel.css"> -->
     <title>Poyangpan's portfolio</title>
 </head>
 
 <body>
-    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbar">
-    <a class="navbar-brand eng_spe" href="#">Poyang's portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
-        aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="navbar">
+        <a class="navbar-brand eng_spe" href="#">Poyang's portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav mr-auto eng_spe">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class=" sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#main">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#honor">Honor</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">More</a>
-            </li>
-        </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto eng_spe">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class=" sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#main">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#honor">Honor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">More</a>
+                </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
             </form> -->
-    </div>
+        </div>
     </nav>
 
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-4" id=''>
+                <div class="col-md-6 col-lg-5" id=''>
                     <div class="mt-3 mb-3">
                         <img src="./img/coverphoto.jpg" width="50%" alt="" id="cover_photo">
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-8">
-                    <h1 class="mt-3 eng_spe">Hello! This is poyang's portfolio.</h1>
+                <div class="col-md-6 col-lg-7">
+                    <h1 class="mt-3 eng_spe">Hello! 這是柏仰的自我介紹!</h1>
                     <hr class="my-4">
-                    <p class="title_font">哈囉！這是柏仰的自我介紹</p>
+                    <p class="eng_spe">This is my portfolio for introduction. </p>
                     <p class="lead eng_spe">
-                        <a class="btn btn-primary btn-lg" href="#main" role="button">Learn more</a>
+                        <a class="btn btn-primary btn-lg mt-3" href="#about" role="button" id="more_btn">Learn more</a>
                     </p>
                 </div>
             </div>
@@ -74,22 +74,45 @@
         </div>
     </div>
 
-    <!-- 個人學經歷 -->
+    <!-- About:出生&個人學經歷 -->
     <main class='mt-0' id="main">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="eng_spe" align='center'>About</h1>
+                    <h1 class="eng_spe" align='center' id="about">About</h1>
+                </div>
+            </div>
+            <!-- 出生 -->
+            <div class='row' id='edu_area'>
+                <div class="col-md-6 col-lg-6 bg_white">
+                    <div class="jumbotron mt-3 edu_area_2" id=''>
+                        <h1>出生</h1>
+                        <ul>
+                            <li>
+                                <h2>淡水人</h2>
+                            </li>
+                            <li>
+                                <h2>牡羊座 A型</h2>
+                            </li>
+                            <!-- <h4 class="mt-3">無邊景色豁心胸</h4>
+                            <h4>月自團圓水自溶</h4> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 bg_white">
+                    <div class="jumbotron mt-3 edu_area_1" id='born'>
+                        <img src="./img/tamsui_scene_1.JPG" alt="" width='100%'>
+                    </div>
                 </div>
             </div>
             <div class='row' id='edu_area'>
                 <div class="col-md-6 col-lg-6 bg_white">
-                    <div class="jumbotron mt-3" id='edu_area_1'>
-                        <img src="./img/edu.JPG" width='100%'>
+                    <div class="jumbotron mt-3 edu_area_1" id=''>
+                        <img src="./img/edu.JPG" alt="" width='100%'>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 bg_white">
-                    <div class="jumbotron mt-3" id='edu_area_2'>
+                    <div class="jumbotron mt-3 edu_area_2" id=''>
                         <h1>學經歷</h1>
                         <ul>
                             <li>新北市立淡水國中 畢業</li>
@@ -113,14 +136,14 @@
             <!-- 隱藏的資訊列 -->
             <div class='row hidden' id='edu_area_more'>
                 <div class="col-md-6 col-lg-6 bg_white">
-                    <div class="jumbotron mt-3" id='edu_area_2'>
+                    <div class="jumbotron mt-3 edu_area_2" id=''>
                         <h1>替代役</h1>
                         <h3>2018-2019 @ 台北市遊民收容中心</h3>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 bg_white">
-                    <div class="jumbotron mt-3" id='edu_area_1'>
-                        <img src="./img/sms_2019.JPG" alt="" width='100%'>
+                    <div class="jumbotron mt-3 edu_area_1" id='sms'>
+                        <img src="./img/sms.JPG" alt="" width='100%'>
                     </div>
                 </div>
             </div>
@@ -213,11 +236,7 @@
                 </div>
                 <div class="col-x act_2">
                     <div class="photo" id="sing_photo">
-                        <p id="sing_slide">
-                            <img src="./img/sing_2019.JPG" alt="2019">
-                            <img src="./img/sing_2018.JPG" class="hidden" alt="2018">
-                            <img src="./img/sing_2016.JPG" class="hidden" alt="2016">
-                        </p>
+                        <p class=""><img src="./img/sing_2019.JPG" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -225,55 +244,55 @@
             <div class="row mt-3" id='dance_area'>
                 <div class="col-x act_2">
                     <div class="photo" id="dance_photo">
-                        <p class=""><img src="./img/dance_1.jpg" alt=""></p>
+                        <p class=""><img src="./img/dance.JPG"" alt=""></p>
                     </div>
                 </div>
                 <div class=" col-x act_1">
-                    <div class="act_p">
-                        <h1 class="">舞蹈</h1>
-                        <p class="">
-                            <ul>
-                                <li>2011-2013 台大MV舞蹈社</li>
-                                <li>2015-2018 台大有氧舞蹈社</li>
-                            </ul>
-                        </p>
+                            <div class="act_p">
+                                <h1 class="">舞蹈</h1>
+                                <p class="">
+                                    <ul>
+                                        <li>2011-2013 台大MV舞蹈社</li>
+                                        <li>2015-2018 台大有氧舞蹈社</li>
+                                    </ul>
+                                </p>
+                            </div>
                     </div>
                 </div>
+                <!-- 旅遊 -->
+                <div class="row mt-3" id='travel_area'>
+                    <div class="col-x act_1">
+                        <div class="act_p">
+                            <h1 class="">旅遊</h1>
+                            <p class=""></p>
+                        </div>
+                    </div>
+                    <div class=" col-x act_2">
+                        <div class="photo" id="travel_photo">
+                            <p class="" id="travel_slide">
+                                <img src="./img/hallstat_scene.jpg" alt="">
+                                <img src="./img/london.jpg" alt="">
+                                <img src="./img/travel_1.jpg" alt="">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- fly -->
+                <!-- <div class="row mt-3 mb-3" id='fly_area'>
+                    <div class=" col-x act_2">
+                        <div class="photo" id="fly_photo">
+                            <p class=""><img src="./img/fly.jpg" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="col-x act_1">
+                        <div class="act_p">
+                            <h1 class="">飛行</h1>
+                            <p class="">A life of accumulation!</p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- activity end -->
             </div>
-            <!-- 旅遊 -->
-            <div class="row mt-3" id='travel_area'>
-                <div class="col-x act_1">
-                    <div class="act_p">
-                        <h1 class="">旅遊</h1>
-                        <p class="">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                </div>
-                <div class=" col-x act_2">
-                    <div class="photo" id="travel_photo">
-                        <p id="travel_slide">
-                            <img src="./img/hallstat_scene.jpg" alt="">
-                            <img src="./img/pompei.jpg" class="hidden" alt="pompei">
-                            <img src="./img/london.jpg" class="hidden" alt="london">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- fly -->
-            <div class="row mt-3 mb-3" id='fly_area'>
-                <div class=" col-x act_2">
-                    <div class="photo" id="fly_photo">
-                        <p class=""><img src="./img/fly.jpg" alt=""></p>
-                    </div>
-                </div>
-                <div class="col-x act_1">
-                    <div class="act_p">
-                        <h1 class="">飛行</h1>
-                        <p class="">A life of accumulation!</p>
-                    </div>
-                </div>
-            </div>
-            <!-- activity end -->
-        </div>
     </section>
     <!-- 分隔線 -->
     <div>
@@ -312,32 +331,13 @@
                     <div class="jumbotron mt-3" id="cs_info">
                         <p class="lead">Front-End & Back-End development</p>
                         <p class="lead">Python, Python & Data Science & Machine learning</p>
-                        <hr class="my-4">
-                        <p>網頁設計、資料庫語言、ios手機應用程式、Python與資料科學、機器學習</p>
+                        <!-- <hr class="my-4"> -->
+                        <!-- <p>網頁設計、資料庫語言、ios手機應用程式、Python與資料科學、機器學習</p> -->
                     </div>
                 </div>
-            </div>
-            <!-- website -->
-            <div class="row mt-3" id='web_area'>
-                <div class="col-md-12 bg_white" id="web_bg">
-                    <div class="jumbotron mt-3  web_bg">
-                        <!-- <h1 class="display-3">Website and app</h1> -->
-                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
-                        <p id='web_img'>
-                            <img src="./img/mac.png" width="35%" alt="">
-                            <img src="./img/imac.png" width="45%" alt="">
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- data science -->
-            <div class="row" id='py_area'>
-                <div class="col-md-12 bg_white">
-                    <div class="jumbotron mt-3  py_bg">
-                        <h1>Python</h1>
-                        <h3 class="mt-4">Data science</h3>
-                        <h3>Machine Learning</h3>
-                        <p class="mt-0"><button type="button" class="btn btn-info">Github</button></p>
+                <div class="col-12 bg_white">
+                    <div class="jumbotron mt-3" id="cs_info2">
+                        <p id="web_img" text-align="right"><img src="./img/mac.png" width="40%" alt=""></p>
                     </div>
                 </div>
             </div>
@@ -355,39 +355,17 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 mt-2">
-                    <p class="center"> Copyright © 2019 Poyangpan - All Rights Reserved</p>
-                    <!-- <h3 class="mt-2 center eng_spe">Contact</h3> -->
+                <div class="col-12">
+                    <p align="center">Copyright © 2019 Poyangpan - All Rights Reserved</p>
                 </div>
             </div>
-            <!-- <div class="row" id="message_area">
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label class="col-form-label" for="inputName">Name:</label>
-                        <input type="text" class="form-control" placeholder="Default input" id="inputName">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="inputEmail1">Email address:</label>
-                        <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="inputTextarea">Leave message:</label>
-                        <textarea class="form-control" id="inputTextarea" rows="3"></textarea>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </footer>
-    </body>
+</body>
 
-    <script src="./moreInfo.js"></script>
-    <script src="./fade_in.js"></script>
-    <script src="./carousel.js"></script>
-    <!-- <script src="./navbar.js"></script> -->
+<script src="./moreInfo.js"></script>
+<script src="./fade_in.js"></script>
+<script src="./carousel.js"></script>
+<!-- <script src="./navbar.js"></script> -->
 
 </html>
