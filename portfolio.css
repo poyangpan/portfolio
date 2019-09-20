@@ -146,12 +146,9 @@
 }
 
 /* 活動資訊背景顏色 */
-act_bg {
-    background-color: rgb(96, 145, 145);
-}
+
 
 .act_1 {
-    background-color: rgb(164, 186, 203);
     height: 300px;
     border: 15px solid white;
     display: flex;
@@ -162,9 +159,21 @@ act_bg {
 }
 
 .act_2 {
-    background-color: rgb(164, 186, 203);
+
     height: 300px;
     border: 15px solid white;
+}
+
+#sing_area>.act_1,
+#sing_area>.act_2 {
+    background-color: rgb(142, 170, 191, 0.7);
+
+}
+
+#dance_area>.act_1,
+#dance_area>.act_2 {
+    background-color: rgba(187, 157, 163, 0.7);
+
 }
 
 /* 遮罩效果 */
@@ -184,14 +193,6 @@ act_bg {
     background-color: black;
 }
 
-.act_p>h1 {
-    font-size: 50px !important;
-}
-
-.act_p>p {
-    font-size: 25px !important;
-    font-style: oblique;
-}
 
 /* CS python背景圖片 */
 
@@ -209,24 +210,37 @@ act_bg {
 
 @media screen and (min-width: 1200px) {
     .col-x {
-        width: 565px
+        width: 565px;
+        height: 500px;
     }
 
     .photo>p>img {
-        height: 270px;
-        width: 400px;
+        height: 350px;
+        width: 535px;
+        margin-top: 60px;
+    }
+
+    /* 調整活動列的文字大小 */
+    .act_p>h1 {
+        font-size: 70px;
+    }
+
+    .act_p>ul {
+        font-size: 28px;
     }
 
 }
 
 @media screen and (min-width: 992px) and (max-width:1199.99px) {
     .col-x {
-        width: 475px
+        width: 475px;
+        height: 400px;
     }
 
     .photo>p>img {
-        height: 270px;
-        width: 400px;
+        height: 300px;
+        width: 445px;
+        margin-top: 35px;
     }
 }
 
