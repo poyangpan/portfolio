@@ -382,6 +382,17 @@
     align-items: center;
 }
 
+#apply_img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#apply_h1 {
+    color: #31383e;
+    text-align: center;
+}
+
 /* footer */
 footer {
     background-color: #31383e;
