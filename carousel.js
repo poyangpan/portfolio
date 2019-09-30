@@ -1,11 +1,12 @@
 window.onload = function () {
     var dir = -1;
-    var interval = 3500;
+    var interval = 5000;
     var duration = 100;
     var timer;
 
     $("#travel_slide img:nth-child(2)").addClass("hidden");
     $("#travel_slide img:nth-child(3)").addClass("hidden");
+    $("#sing_slide img:nth-child(2)").addClass("hidden");
 
     // 開始計時 
     // 每隔3000毫秒(interval)執行一次slideTimer
@@ -13,9 +14,13 @@ window.onload = function () {
     slideTimer函數
 
     function slideTimer() {
+        $("#sing_slide img:nth-child(1)").addClass("hidden");
         $("#travel_slide img:nth-child(1)").addClass("hidden");
+        $("#sing_slide img:nth-child(2)").removeClass("hidden");
         $("#travel_slide img:nth-child(3)").removeClass("hidden");
+        $("#sing_slide").prepend($("#sing_slide img:nth-child(2)"));
         $("#travel_slide").prepend($("#travel_slide img:nth-child(3)"));
+
     };
 }
 
